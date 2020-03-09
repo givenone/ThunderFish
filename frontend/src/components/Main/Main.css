@@ -1,0 +1,58 @@
+@media(min-width: 1000px) {
+	.main-page {
+		width: 80%;
+		min-width: 1000px;
+		max-width: 1150px;
+	}
+	.main-page .main-page-content {
+		flex-direction: row;
+		align-items: flex-start;
+	}
+}
+
+@media(max-width: 1000px) and (min-width: 500px) {
+	.main-page {
+		width: 80%;
+		min-width: 500px;
+		max-width: 550px;
+	}
+	.main-page .main-page-content {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media(max-width: 500px) {
+	.main-page {
+		width: 100%;
+		max-width: 500px;
+	}
+	.main-page .main-page-content {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.main-page {
+	margin: 0 auto;
+}
+
+.main-page .main-page-content {
+	width: 100%;
+
+	display: flex;
+
+}
+
+.main-page .main-page-content .welcome-wrapper {
+	flex-grow: 1;
+	width: 100%;
+	margin: 0 8px;
+}
+
+.main-page .main-page-content .recent-meetings {
+	flex-grow: 1;
+	width: 100%;
+	margin: 0 8px;
+}
+

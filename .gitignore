@@ -103,8 +103,11 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-# node moudles
+# node modules
 frontend/node_modules
 
 # database - not shared
 backend/db.sqlite3
+
+#pycharm
+**/.idea

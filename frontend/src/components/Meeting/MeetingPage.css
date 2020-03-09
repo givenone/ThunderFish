@@ -1,0 +1,86 @@
+@media(min-width: 1000px) {
+	.meeting-page {
+		width: 80%;
+		min-width: 1000px;
+		max-width: 1150px;
+	}
+	.meeting-page .meeting-content {
+		flex-direction: row;
+		align-items: flex-start;
+	}
+}
+
+@media(max-width: 1000px) and (min-width: 500px) {
+	.meeting-page {
+		width: 80%;
+		min-width: 500px;
+		max-width: 550px;
+	}
+	.meeting-page .meeting-content {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media(max-width: 500px) {
+	.meeting-page {
+		width: 100%;
+		max-width: 500px;
+	}
+	.meeting-page .meeting-content {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.meeting-page {
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.meeting-page .meeting-title {
+	width: 100%;
+}
+
+.meeting-page .meeting-content {
+	width: 100%;
+
+	display: flex;
+}
+
+.meeting-page .meeting-content .meeting-info {
+	flex-basis: 50%;
+	width: 100%;
+	margin: 0 8px;
+}
+
+.meeting-page .meeting-content .participant-list {
+	width: 100%;	
+	padding: 0;
+	margin: 0;
+
+	background: #ffffff;
+	border: 1px solid #dddddd;
+	border-radius: 8px;
+
+	list-style: none;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.meeting-page .meeting-content .meeting-guests {
+	flex-basis: 50%;
+
+	width: 100%;
+	margin: 0 8px;
+}
+
+.meeting-page .meeting-content .meeting-guests .comments {
+	width: 100%;
+}
+
